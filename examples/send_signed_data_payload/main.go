@@ -46,7 +46,7 @@ func main() {
 
 	// create a signed data container with your own data.
 	// the data is signed during creation of the container.
-	signedDataContainer, err := datapayloads.NewSignedDataContainer(signer, []byte("my singed message"))
+	signedDataContainer, err := datapayloads.NewSignedDataContainer(signer, []byte("my signed message"))
 	if err != nil {
 		panic(fmt.Sprintf("signing data failed: %s", err))
 	}
